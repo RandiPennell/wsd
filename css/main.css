@@ -1,6 +1,9 @@
 		body {
 			background-color:#fce200;
 		}
+		cursor {
+			cursor:url(images/pokeball.png),auto;
+		}
 		p {
 			color: #FFFFFF;
 			font-size: 16px;
