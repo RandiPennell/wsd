@@ -1,0 +1,40 @@
+		p {
+			color: #161603;
+			font-size: 16px;
+		}	
+		
+		h1, h2, h3 {
+			color: #c0bd1b;
+			font-weight: bold;
+		}
+		.list {
+			color: #d1ce0e;
+			font-size: 16px;
+		}
+		.return {
+			color: #3366BB;
+			text-decoration: underline;
+			font-size: 14px;
+		}
+		.link {
+			font-weight: italic;
+			color: #0000FF;
+			text-decoration: underline;
+			font-size: 18px;
+		}
+		a:link { 
+			text-decoration: underline,
+			 color: #0000FF;
+		}
+		a:hover { 
+			text-decoration: none;
+			color: #0645AD;
+		}
+		a:visited {
+			text-decoration: none;
+			color: #0B0080;
+		}
+		#definition {
+			color: #161603;
+			font-size: 16px;
+		}
