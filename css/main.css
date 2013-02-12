@@ -1,12 +1,11 @@
 		body {
-			background-image:url(http://images1.fanpop.com/images/photos/2600000/Pok-mon-pokemon-2603105-1680-1050.jpg);
-			background-color:#161603;
+			background-color:#fce200;
 		}
 		p {
-			color: #161603;
+			color: #FFFFFF;
 			font-size: 16px;
-			font-family: "Londrina Outline"; 
-			src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype");
+			font-family: "Risque"; 
+			src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
 		}	
 		
 		h1, h2, h3 {
@@ -16,6 +15,8 @@
 		ul li {
 			color: #d1ce0e;
 			font-size: 16px;
+			font-family: "Londrina Outline"; 
+			src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype")
 		}
 		.return {
 			color: #3366BB;
