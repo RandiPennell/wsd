@@ -7,7 +7,7 @@
 			color: #c0bd1b;
 			font-weight: bold;
 		}
-		.list {
+		ul li {
 			color: #d1ce0e;
 			font-size: 16px;
 		}
@@ -37,4 +37,9 @@
 		#definition {
 			color: #161603;
 			font-size: 16px;
+		}
+		#join {
+			color: #d1ce0e;
+			font-size: 19px;
+			font-weight: bold;
 		}
