@@ -1,26 +1,23 @@
 		body {
-			background-color:#fce200;
-		}
-		cursor {
-			cursor:url(images/pokeball.png),auto;
+			background-color:#e2cb00;
 		}
 		p {
 			color: #FFFFFF;
 			font-size: 16px;
 			font-family: "Risque"; 
 			src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+			text-indent: 5px;
 		}	
 		
 		h1, h2, h3 {
-			color: #FFFFFF;
+			color: ##191600;
 			font-weight: bold;
 		}
 		ul li {
 			color: #FFFFFF;
 			font-size: 16px;
-			/*
-			font-family: "Londrina Outline"; 
-			src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype") */
+			/******************************************  font-family: "Londrina Outline"; 
+					src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype") */
 		}
 		.return {
 			color: #3366BB;
@@ -35,22 +32,31 @@
 		}
 		a:link { 
 			text-decoration: underline,
-			 color: #0000FF;
+			color: #0000FF;
+			cursor: hand, progress !important;
 		}
 		a:hover { 
-			text-decoration: none;
-			color: #0645AD;
+			color: #0072ff;
 		}
 		a:visited {
 			text-decoration: none;
-			color: #0B0080;
+			color: #0645AD;
+		}
+		a:active {
+			color: #bcbcbc;
 		}
 		#definition {
 			color: #FFFFFF;
 			font-size: 17px;
 		}
 		#join {
-			color: #d1ce0e;
+			color: ##191600;
 			font-size: 19px;
 			font-weight: bold;
+		}
+		#blink {
+			text-decoration: blink; underline;
+			font-weight: bold;
+			color: #F00;
+			text-shadow: 1px 1px 3px #65645d;
 		}
