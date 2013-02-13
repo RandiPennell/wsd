@@ -1,28 +1,58 @@
 		body {
-			background-color:#e2cb00;
+			background-image: url(../images/pikaback.png);
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			overflow:auto;
+		}
+		nav {
+  			display: inline-block;
+  			padding: 5px;
+  			margin-right: -4px; 
+  			color: fce200;
+  			text-align: center;
+  			font-family: "Risque"; src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+  			font-weight: bold;
+  		}	
+  		nav ul li {
+			display:inline;
+			padding: 20px;
+			font-size: 22px;	
+		}
+		h1 {
+			font-size: 28px;
 		}
 		p {
 			color: #FFFFFF;
 			font-size: 16px;
-			font-family: "Risque"; 
-			src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+			font-family: "Risque"; src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
 			text-indent: 5px;
 		}	
-		
 		h1, h2, h3 {
-			color: ##191600;
+			color: #FCE200;
 			font-weight: bold;
+			text-shadow: 1px 1px 3px #FCE200;
 		}
 		ul li {
 			color: #FFFFFF;
+			list-style: square;
 			font-size: 16px;
+			font-family: "Risque"; 
+			src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+			list-style-type: circle;
 			/******************************************  font-family: "Londrina Outline"; 
 					src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype") */
+		}
+		span {
+			display: block;
+		}
+		img a {
+			float: right;
 		}
 		.return {
 			color: #3366BB;
 			text-decoration: underline;
 			font-size: 14px;
+			text-align: left; 
 		}
 		.link {
 			font-weight: italic;
@@ -32,18 +62,19 @@
 		}
 		a:link { 
 			text-decoration: underline,
-			color: #0000FF;
-			cursor: hand, progress !important;
-		}
-		a:hover { 
-			color: #0072ff;
+			color: #0F3137;
+			cursor: hand;
 		}
 		a:visited {
 			text-decoration: none;
-			color: #0645AD;
+			color: #535b4e;
 		}
+		a:hover { 
+			color: #B7C9AF;
+		}
+		
 		a:active {
-			color: #bcbcbc;
+			color: #OOOOFF;
 		}
 		#definition {
 			color: #FFFFFF;
@@ -57,6 +88,29 @@
 		#blink {
 			text-decoration: blink; underline;
 			font-weight: bold;
+			font-size: 22px;
 			color: #F00;
-			text-shadow: 1px 1px 3px #65645d;
+			text-shadow: 1px 1px 5px #65645d;
 		}
+		div.photo {
+  			margin: 2px;
+  			border: 1px solid #0000ff;
+  			height: auto;
+  			width: auto;
+  			float: left;
+  		}
+		div.photo a: hover img {
+ 			border: 1px solid #0000ff;
+ 		}
+ 		div.nav {
+ 			display: block;
+ 			float: left;
+ 		}
+		div.desc {
+  			text-align: center;
+  			font-weight: normal;
+  			width: 120px;
+  			margin: 2px;
+  			padding: 10px;
+  		}
+  		
