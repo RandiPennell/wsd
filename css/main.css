@@ -8,9 +8,8 @@
 			padding-left:10px;
 		}
 		nav {
-  			display: inline-block;
+  			display: inline-block center;
   			padding: 1px;
-  			margin-right: -4px; 
   			color: #fce200;
   			text-align: center;
   			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
