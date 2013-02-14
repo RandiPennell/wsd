@@ -3,41 +3,53 @@
 			background-repeat:no-repeat;
 			background-attachment:fixed;
 			overflow:auto;
+			padding: 5px;
+			padding-right:50px;
+			padding-left:10px;
 		}
 		nav {
   			display: inline-block;
-  			padding: 5px;
+  			padding: 1px;
   			margin-right: -4px; 
-  			color: fce200;
+  			color: #fce200;
   			text-align: center;
-  			font-family: "Risque"; src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+  			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
   			font-weight: bold;
   		}	
-  		nav ul li {
+  		nav li {
 			display:inline;
 			padding: 20px;
-			font-size: 22px;	
+			font-size: 22px;
+			text-align: center;	
 		}
 		h1 {
 			font-size: 28px;
+			color: #40221B;
+			font-weight: bold;
+			text-shadow: 1px 1px 3px #73341D;
+			text-align: center;
+			-webkit-text-stroke-width: .1px;
+   			-webkit-text-stroke-color: black;
 		}
 		p {
-			color: #FFFFFF;
+			color: #FFF;
 			font-size: 16px;
-			font-family: "Risque"; src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 			text-indent: 5px;
+			padding: 5px;
 		}	
-		h1, h2, h3 {
-			color: #FCE200;
+		h2, h3 {
+			color: #40221B;
 			font-weight: bold;
-			text-shadow: 1px 1px 3px #FCE200;
+			text-shadow: 1px 1px 3px #73341D;
+			-webkit-text-stroke-width: .1px;
+   			-webkit-text-stroke-color: black;
 		}
 		ul li {
-			color: #FFFFFF;
-			list-style: square;
+			color: #FFF;
 			font-size: 16px;
 			font-family: "Risque"; 
-			src: url(http://fonts.googleapis.com/css?family=Risque) format ("truetype");
+			src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 			list-style-type: circle;
 			/******************************************  font-family: "Londrina Outline"; 
 					src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype") */
@@ -48,20 +60,13 @@
 		img a {
 			float: right;
 		}
-		.return {
-			color: #3366BB;
-			text-decoration: underline;
-			font-size: 14px;
-			text-align: left; 
-		}
 		.link {
-			font-weight: italic;
 			color: #0000FF;
 			text-decoration: underline;
 			font-size: 18px;
 		}
 		a:link { 
-			text-decoration: underline,
+			text-decoration: underline;
 			color: #0F3137;
 			cursor: hand;
 		}
@@ -74,14 +79,14 @@
 		}
 		
 		a:active {
-			color: #OOOOFF;
+			color: #0000FF;
 		}
 		#definition {
 			color: #FFFFFF;
 			font-size: 17px;
 		}
 		#join {
-			color: ##191600;
+			color: #FCE200;
 			font-size: 19px;
 			font-weight: bold;
 		}
@@ -92,25 +97,80 @@
 			color: #F00;
 			text-shadow: 1px 1px 5px #65645d;
 		}
-		div.photo {
-  			margin: 2px;
-  			border: 1px solid #0000ff;
-  			height: auto;
-  			width: auto;
-  			float: left;
-  		}
-		div.photo a: hover img {
- 			border: 1px solid #0000ff;
- 		}
- 		div.nav {
- 			display: block;
- 			float: left;
- 		}
+		#poke {
+			text-align: center;
+  			font-weight: normal;
+  			padding: 20px; 	
+		}
+		#button-wraper {
+    		width: 960px;
+    		margin: 0 auto;
+    		position: relative;
+    		padding: 10px;
+		}
 		div.desc {
   			text-align: center;
   			font-weight: normal;
-  			width: 120px;
-  			margin: 2px;
-  			padding: 10px;
+  			width: 130px;
+  			height: 55px;
+  			margin: 4px;
+  			padding: 15px;
+  			clear:both;
+  			color: #FFFFFF;
+			list-style: square;
+			font-size: 16px;
+			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
   		}
-  		
+  		.thumbnail {
+			float:left;
+			width:170px;
+			height:207px;
+			margin:5px;
+			margin-left: 20px;
+  			margin-right: 20px;
+			padding-top: 5px;
+		}
+		span.photo {
+			float:left;
+		}
+		input, textarea {  
+    		padding: 9px;  
+    		border: solid 3px #FFF; 
+    		position: center;
+   		 	outline: 0;  
+    		font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    		width: 200px;  
+    		background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    		box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    		-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    		-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+   	 	}  
+		textarea {  
+    		width: 400px;  
+    		max-width: 400px;  
+    		height: 150px;  
+    		line-height: 150%;  
+    	}  
+		input:hover, textarea:hover,  
+		input:focus, textarea:focus {  
+    		border-color: #C9C9C9;  
+    		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    		position: center;  
+    	}  
+		.form label {  
+    		margin-left: 10px;  
+    		color: #65645d;
+    	}  
+		.submit input {  
+    		width: auto;  
+    		padding: 9px 15px;  
+    		background: #d9984a;  
+    		border: solid 1px #FFF;  
+    		font-size: 14px;  
+    		color: #FFFFFF;  
+    		-moz-border-radius: 5px;  
+    		-webkit-border-radius: 5px;  
+    	}  
+			
