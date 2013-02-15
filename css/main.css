@@ -69,6 +69,7 @@
 			font-size: 26px;
 			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 			font-weight: bold;
+			vertical-align: top;
 			text-shadow: 1px 1px 3px #73341D;
 			-webkit-text-stroke-width: .1px;
    			-webkit-text-stroke-color: black;
