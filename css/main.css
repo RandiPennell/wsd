@@ -9,7 +9,6 @@
 			padding-left: 10px;
 		}
 		.header }
-			background-color: #D90404;
 			width: 700px;
 		}
 		nav {
@@ -18,6 +17,10 @@
   			text-align: center;
   			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
   			font: bold #FFF;
+  		}
+  		header {
+  			background-color: #D90404;
+			clear: both;	
   		}	
   		footer {
 			text-indent: 5px;
@@ -36,6 +39,8 @@
 			color: #FFF;
 			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 			margin: 10px;
+			float: left;
+			vertical-align: top;
 		}
 		header p, aside p, {
 			font-size: 16px;
@@ -43,7 +48,9 @@
 		}
 		h1 {
 			font-size: 32px;
-			color: #F0ED22;
+			color: #FFF;
+			padding: 0px;
+			margin: 0px;
 			font-weight: bold;
 			text-shadow: 1px 1px 3px #73341D;
 			text-align: center;
@@ -104,31 +111,25 @@
 			float: left;
 			font-size: 18px;
 			text-decoration: none;
-			background: #D90404;
 			display: inline-block center;
-  			padding: 1px;
   			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 		}
 		.float {
 			width: 100%;
 			display: inline block;
 			overflow: hidden;
-			position: fixed;
+			position: auto;
 			float: right;
-			padding: 20px;
-  			margin: 20px;
 		}
 		article {
 			background-color: #D90404;
 			color: #FFF;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			padding-left: -50px;
-			padding-right: -50px;
-			margin: 20px;	
+			vertical-align: top;
+			padding-bottom: 10px;	
 		}	
-		div .p {
+		article div .p {
 			-moz-column-count: 3;
+			background-color: #D90404;
 		}
 		.link {
 			color: #0000FF;
@@ -169,7 +170,6 @@
 			display: inline;
   			height: auto;
   			width: auto;
-  			float: center;
 		}
 		#poke {
 			text-align: center;
@@ -198,26 +198,27 @@
 			margin-right: auto;
    			border:2px solid #65645d;
    			background-color:#FFF;
+   			vertical-align: top;
 		}
 		ul.img li a {
 			display: inline;
 			width: 250px;
 			text-align: center;
 			font-weight: bold;
-			float: left;
+			float: right;
 			color: white;
 			font-size: 1.2em;
 			text-decoration: none;
 			background: #FFF;
 		}
 		ul#menu li {
-			display: inline; /* Prevents "stepdown" */
+			display: inline; 
 		}
 		div.img ul
-			display: inline; /* Prevents "stepdown" */
+			display: inline; 
 		}
   		.thumbnail {
-			float:left;
+			float: left;
 			width:170px;
 			height:207px;
 			margin:5px;
@@ -270,4 +271,29 @@
     	}  
     	.clearfix {
     		clear: both;
+    	}
+    	.column {
+    		float: right;
+    		padding-top: 10px;
     	}	
+    	#contentwrapper{
+			float: left;
+			width: 100%;
+		}
+		#contentcolumn{
+			margin-right: 370px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
+		}
+		#leftcolumn{
+			float: left;
+			padding-top: 30px;
+			width: 480px; /*Width of left column in pixel*/
+			margin-left: -750px; /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
+			background: #D90404;
+		}
+		#rightcolumn{
+			float: left;
+			padding-top: 40px;
+			width: 190px; /*Width of right column in pixels*/
+			margin-left: -220px; /*Set margin to -RightColumnWidth*/
+			background: #D90404;
+		}
