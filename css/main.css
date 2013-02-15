@@ -1,12 +1,17 @@
 		body {
 			background-image: url(../images/pikaback2.png);
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			overflow:auto;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			overflow: auto;
 			padding: 0;
 			margin: 0;
-			padding-right:50px;
-			padding-left:10px;
+			padding-right: 50px;
+			padding-left: 10px;
+		}
+		header }
+			background-color: #D90404;
+			border: 5px solid #FFF;	
+			width: 700px;
 		}
 		#wrapper {
     		width: 500px;
@@ -14,12 +19,12 @@
     		text-align: left;
 		}
 		nav {
+			background-color: #D90404 100%;
   			display: inline-block center;
   			padding: 1px;
-  			color: #65645d;
   			text-align: center;
   			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
-  			font-weight: bold;
+  			font: bold #FFF;
   		}	
   		footer {
 			text-indent: 5px;
@@ -33,7 +38,12 @@
 		aside {
 			float: right;
 		}
-		article p, header p, aside p, {
+		article p {
+			font-size: 16px;
+			color: #FFF;
+			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
+		}
+		header p, aside p, {
 			font-size: 16px;
 			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 		}
@@ -42,9 +52,12 @@
 			padding: 20px;
 			font-size: 22px;
 			text-align: center;	
+			color: #FFF;	
+			font-family: "Risque"; 
+			src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");	
 		}
 		h1 {
-			font-size: 28px;
+			font-size: 32px;
 			color: #D90404;
 			font-weight: bold;
 			text-shadow: 1px 1px 3px #73341D;
@@ -59,15 +72,26 @@
 			text-indent: 5px;
 			margin: 5px;
 		}	
-		h2, h3 {
+		h2 {
+			color: #FFF;
+			font-size: 26px;
+			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
+			font-weight: bold;
+			text-shadow: 1px 1px 3px #73341D;
+			-webkit-text-stroke-width: .1px;
+   			-webkit-text-stroke-color: black;
+		}
+		h3 {
 			color: #D90404;
+			font-size: 26px;
+			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 			font-weight: bold;
 			text-shadow: 1px 1px 3px #73341D;
 			-webkit-text-stroke-width: .1px;
    			-webkit-text-stroke-color: black;
 		}
 		ul li {
-			color: #65645d;
+			color: #FFF;
 			font-size: 16px;
 			font-family: "Risque"; 
 			src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
@@ -76,7 +100,7 @@
 			/******************************************  font-family: "Londrina Outline"; 
 					src: url(http://fonts.googleapis.com/css?family=Londrina+Outline) format ("truetype") */
 		}
-		div ul {
+		span.ul li {
 			border: 1px solid #65645d
 			float: left;
 			display: inline;
@@ -85,12 +109,22 @@
 		span {
 			display: block;
 		}
-		imgfloat {
+		.float {
+			width: 100%;
+			display: inline block;
+			overflow: hidden;
+			position: fixed;
 			float: right;
 			padding: 20px;
 		}
-		section {
-			
+		article {
+			background-color: #D90404;
+			color: #FFF;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: -50px;
+			padding-right: -50px;
+			margin: 10px;	
 		}	
 		.link {
 			color: #0000FF;
@@ -114,7 +148,7 @@
 			color: #0000FF;
 		}
 		#definition {
-			color: #65645d;
+			color: #FFF;
 			font-size: 17px;
 		}
 		#join {
@@ -128,10 +162,10 @@
 			font-size: 22px;
 			color: #F00;
 			text-shadow: 1px 1px 5px #65645d;
-			display:inline;
-  			height:auto;
-  			width:auto;
-  			float: left;
+			display: inline;
+  			height: auto;
+  			width: auto;
+  			float: center;
 		}
 		#poke {
 			text-align: center;
@@ -144,30 +178,13 @@
     		position: relative;
     		padding: 10px;
 		}
-		p.desc {
-  			text-align: center;
-  			font-weight: normal;
-  			width: 130px;
-  			height: 55px;
-  			margin: 4px;
-  			padding: 15px;
-  			clear:both;
-  			color: #FFFFFF;
-			list-style: square;
-			font-size: 16px;
-			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
-  		}
-  		div.img {
-  			margin:2px;
-  			border:2px solid #FFF;
+		span.img img {
+			list-style-type: none;
   			display:inline;
-  			height:auto;
-  			width:auto;
   			float: left;
-  		}
-		div.img img {
-  			display:inline;
-  			margin:3px;
+  			margin: 10px;
+  			padding-right: 10px;
+  			overflow: hidden;
   		}
   		.thumbnail {
 			float:left;
