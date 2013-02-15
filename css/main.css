@@ -12,11 +12,6 @@
 			background-color: #D90404;
 			width: 700px;
 		}
-		#wrapper {
-    		width: 500px;
-    		margin: 0 auto;
-    		text-align: left;
-		}
 		nav {
   			display: inline-block center;
   			padding: 1px;
@@ -46,22 +41,13 @@
 			font-size: 16px;
 			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 		}
-  		nav li {
-			display:inline;
-			padding: 20px;
-			font-size: 22px;
-			text-align: center;	
-			color: #FFF;	
-			font-family: "Risque"; 
-			src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");	
-		}
 		h1 {
 			font-size: 32px;
-			color: #D90404;
+			color: #F0ED22;
 			font-weight: bold;
 			text-shadow: 1px 1px 3px #73341D;
 			text-align: center;
-			-webkit-text-stroke-width: .1px;
+			-webkit-text-stroke-width: .2px;
    			-webkit-text-stroke-color: black;
 		}
 		p {
@@ -107,6 +93,21 @@
 		}
 		span {
 			display: block;
+		}
+		ul#menu li a {
+			width: 300px;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+			color: white;
+			float: left;
+			font-size: 18px;
+			text-decoration: none;
+			background: #D90404;
+			display: inline-block center;
+  			padding: 1px;
+  			font-family: "Risque"; src: url('http://fonts.googleapis.com/css?family=Risque') format ("truetype");
 		}
 		.float {
 			width: 100%;
@@ -182,14 +183,39 @@
     		padding: 10px;
 			display: block;
 		}
-		span.img img {
+		.img img {
 			list-style-type: none;
-  			display:inline;
+  			display: inline;
   			float: left;
-  			margin: 10px;
-  			padding-right: 10px;
-  			overflow: hidden;
-  		}
+  			padding-right:20px;
+  			padding-left: 20px;
+  			padding-top: 10px;
+  			padding-bottom: 10px;	
+  			height: 200px;
+			max-width: 180px;
+  			margin: 0 auto;
+  			margin-left: auto;
+			margin-right: auto;
+   			border:2px solid #65645d;
+   			background-color:#FFF;
+		}
+		ul.img li a {
+			display: inline;
+			width: 250px;
+			text-align: center;
+			font-weight: bold;
+			float: left;
+			color: white;
+			font-size: 1.2em;
+			text-decoration: none;
+			background: #FFF;
+		}
+		ul#menu li {
+			display: inline; /* Prevents "stepdown" */
+		}
+		div.img ul
+			display: inline; /* Prevents "stepdown" */
+		}
   		.thumbnail {
 			float:left;
 			width:170px;
